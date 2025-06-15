@@ -1,0 +1,315 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #d7ccc8;
+}
+
+nav {
+    background-color: #4e342e;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+header div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headermenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.mainmenus {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.containermenu {
+    border: 1px solid #bcaaa4;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #4e342e;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.formdaftar, .formloginmember, .formloginadmin, .formtambahorder {
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.formsearch {
+    width: 100%;
+    margin: 10px auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.formdaftar form, .formloginmember form, .formloginadmin form, .formtambahorder form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formdaftar label, .formloginmember label, .formloginadmin label, .formtambahorder label, .formsearch label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.formdaftar input[type="text"], .formloginmember input[type="text"], .formloginadmin input[type="text"], .formtambahorder input[type="text"], .formsearch input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.formdaftar input[type="text"]:focus, .formloginmember input[type="text"]:focus, .formloginadmin input[type="text"]:focus, .formtambahorder input[type="text"]:focus, .formsearch input[type="text"]:focus {
+    outline: none;
+    border-color: #795548;
+    box-shadow: 0 0 5px #4e342e;
+}
+
+.formdaftar input[type="submit"], .formloginmember input[type="submit"], .formloginadmin input[type="submit"], .formtambahorder input[type="submit"], .formsearch input[type="submit"] {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: #795548;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formdaftar input[type="submit"]:hover, .formloginmember input[type="submit"]:hover, .formloginadmin input[type="submit"]:hover, .formtambahorder input[type="submit"]:hover, .formsearch input[type="submit"]:hover {
+    background-color: #5d4037;
+}
+
+.notifdaftar p {
+    color: #e53935;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.tabeldashboard, .tabeladmin {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+}
+
+.tabeldashboard table, .tabeladmin table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fdfdfd;
+}
+
+.tabeldashboard th, .tabeladmin th {
+    background-color: #4e342e;
+    color: white;
+    text-align: left;
+    padding: 14px 20px;
+    font-size: 15px;
+}
+
+.tabeldashboard td, .tabeladmin td {
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ececec;
+}
+
+.tabeldashboard tr:nth-child(even), .tabeladmin tr:nth-child(even) {
+    background-color: #f3eae7;
+}
+
+.tabeldashboard tr:hover, .tabeladmin tr:hover {
+    background-color: #ecdfd9;
+    transition: background-color 0.3s ease;
+}
+
+.tabeldashboard img, .tabeladmin img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabeldashboard a[href="logout.php"], .tabeladmin a[href="logout-admin.php"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #8d6e63;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tabeldashboard a[href="logout.php"]:hover, .tabeladmin a[href="logout-admin.php"]:hover {
+    background-color: #5d4037;
+}
+
+.headermenu a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #795548;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.containermenu a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #795548;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.headermenu a:hover, .containermenu a:hover {
+    background-color: #3e2723;
+}
+
+header h3 {
+    text-align: center;
+}
+
+.notifsukses {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    font-size: 14px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.notifsukses a {
+    color: #4e342e;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .mainmenus {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    header {
+        background-color: #ffffff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headermenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
